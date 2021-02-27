@@ -70,7 +70,7 @@ export default {
   name: "Aboutus",
   props: {
     contentheading: String,
-    mainContent: String
+    mainContent: String,
   },
   data() {
     return {
@@ -78,8 +78,8 @@ export default {
         name: "",
         email: "",
         contact: "",
-        message: ""
-      }
+        message: "",
+      },
     };
   },
   methods: {
@@ -92,11 +92,11 @@ export default {
         .then(() => {
           console.log("Data Save successfully");
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -141,6 +141,19 @@ export default {
 .send {
   background-color: #000;
   color: white;
+}
+@media (max-width: 992px) {
+  .contact-image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    border-bottom-left-radius: 0px;
+  }
+  .form-container {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }
 .container {
   margin-top: 100px;

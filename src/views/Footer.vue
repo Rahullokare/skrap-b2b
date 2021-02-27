@@ -56,8 +56,8 @@
         <!-- End Col -->
         <div class="col-md-12 col-lg-8">
           <div class="row">
-            <div class="col-md-6">
-              <div class="contact-us">
+            <div class="col-md-6 col-sm-12">
+              <div class="contact-us" id="location">
                 <div class="contact-icon">
                   <i class="fa fa-map-o" aria-hidden="true"></i>
                 </div>
@@ -71,7 +71,7 @@
               <!-- End Contact Us -->
             </div>
             <!-- End Col -->
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12">
               <div class="contact-us contact-us-last">
                 <div class="contact-icon">
                   <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
@@ -169,13 +169,13 @@
     <div class="copyright">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <span>Copyright © 2021, All Right Reserved</span>
           </div>
           <!-- End Col -->
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <div class="copyright-menu">
-              <ul>
+              <ul class="footer-link">
                 <li>
                   <a href="#">Home</a>
                 </li>
@@ -206,6 +206,11 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+@media (max-width: 992px) {
+  #dk-footer {
+    margin-top: 20%;
+  }
+}
 footer {
   margin-top: 8%;
 }
@@ -329,6 +334,14 @@ p {
 }
 .dk-footer .contact-us.contact-us-last {
   margin-left: -80px;
+}
+@media (max-width: 768px) {
+  .dk-footer .contact-us.contact-us-last {
+    margin-left: 0 !important;
+  }
+  #location {
+    margin-top: 68px;
+  }
 }
 .dk-footer .contact-icon i {
   font-size: 24px;
@@ -456,7 +469,7 @@ p {
   transition: all 0.3s;
 }
 .footer-widget a:hover {
-  color: #ed1c24;
+  color: #ffe000;
 }
 
 .footer-widget:after {
@@ -568,19 +581,30 @@ p {
   transition: all 0.3s linear;
 }
 .copyright a:hover {
-  color: #ed1c24;
+  color: #ffe000;
 }
 
-.copyright-menu ul {
-  text-align: right;
-  margin: 0;
-}
+// .copyright-menu ul {
+//   text-align: right;
+//   margin: 0;
+// }
 
-.copyright-menu li {
-  display: inline-block;
-  padding-left: 20px;
+// .copyright-menu li {
+//   display: inline-block;
+//   padding-left: 20px;
+// }
+.footer-link {
+  display: flex;
+  justify-content: space-evenly;
 }
-
+@media (max-width: 992px) {
+  .footer-link {
+    margin-top: 5%;
+  }
+  .footer-widget {
+    padding-left: 80px;
+  }
+}
 .btn-logo {
   padding: 5px 15px 5px 15px !important;
   right: 4px !important;

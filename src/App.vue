@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>hello</h1>
     <Base />
   </div>
 </template>
@@ -9,8 +8,8 @@
 import Base from "./views/Base";
 export default {
   components: {
-    Base
-  }
+    Base,
+  },
 };
 </script>
 

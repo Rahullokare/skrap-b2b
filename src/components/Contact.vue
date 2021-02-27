@@ -46,8 +46,8 @@
 import Contactus from "./Contactus";
 export default {
   components: {
-    Contactus
-  }
+    Contactus,
+  },
 };
 </script>
 
@@ -73,6 +73,11 @@ export default {
   font-size: 70px;
   font-weight: bold;
   color: white;
+}
+@media (max-width: 768px) {
+  .main-text {
+    font-size: 30px;
+  }
 }
 .container-fluid {
   text-align: center;
