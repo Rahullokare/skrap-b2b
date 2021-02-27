@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-lg-6 col-sm-12 col-md-12">
         <div class="main-img">
@@ -54,7 +54,7 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-.container-fluid {
+.container {
   background-color: #f2f6f8;
   margin-top: 8%;
 
@@ -69,8 +69,15 @@ export default {};
       margin-top: 80px;
 
       span {
-        color: #ed1c24;
-        font-weight: 300;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, #7ed56f, #28b485);
+        display: inline-block;
+        color: transparent;
+        -webkit-background-clip: text;
+        letter-spacing: 2px;
+        margin-bottom: 0;
       }
     }
     hr {
@@ -89,8 +96,16 @@ export default {};
       display: flex;
       align-items: center;
       span {
+        font-weight: 500;
         font-size: 29px;
-        color: #ed1c24;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right, #7ed56f, #28b485);
+        display: inline-block;
+        color: transparent;
+        -webkit-background-clip: text;
+        letter-spacing: 2px;
+        margin-bottom: 0;
         margin-right: 1rem;
       }
     }

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid">
+  <div class="container">
     <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
       <a class="navbar-brand text-primary" href="#"
         ><img src="../assets/logo-skrap.png" alt="logo"
@@ -96,7 +96,7 @@ a {
   text-decoration: none !important;
 }
 .navbar {
-  height: 101px;
+  // height: 101px;
 
   z-index: 9000;
   // background-color: rgba(0, 0, 0, 0.5);
@@ -111,7 +111,8 @@ a {
     }
   }
   .navbar-brand {
-    margin-right: 50px;
+    // margin-right: 50px;
+    height: 100px;
 
     img {
       max-width: 47%;

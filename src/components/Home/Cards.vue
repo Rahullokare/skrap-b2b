@@ -64,6 +64,13 @@ export default {};
 .container {
   margin-top: 50px;
 }
+.card {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card:hover {
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
 @media (max-width: 992px) {
   .card-container {
     margin-top: 5% !important;
