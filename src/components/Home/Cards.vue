@@ -66,6 +66,9 @@ export default {};
 }
 .card {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
 }
 .card:hover {
   transform: scale(1.2);
@@ -74,6 +77,10 @@ export default {};
 @media (max-width: 992px) {
   .card-container {
     margin-top: 5% !important;
+  }
+  .card:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
   }
 }
 </style>

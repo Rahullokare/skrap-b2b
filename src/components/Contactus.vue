@@ -101,12 +101,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.container {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 .contact-image {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-repeat: no-repeat;
   background-position: center;
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;

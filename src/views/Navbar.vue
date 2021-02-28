@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
+  <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
+    <div class="container">
       <a class="navbar-brand text-primary" href="#"
         ><img src="../assets/logo-skrap.png" alt="logo"
       /></a>
@@ -80,8 +80,8 @@
           </li>
         </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </template>
 
 <script>
